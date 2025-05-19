@@ -8,5 +8,9 @@ public enum Course {
 	PHYS 		("Physics", "Science"),
 	MEDI 		("Medicine", "Medicine"),
 	ACC 		("Accounting", "Commerce");
+
+	Course(String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
 	
 }
