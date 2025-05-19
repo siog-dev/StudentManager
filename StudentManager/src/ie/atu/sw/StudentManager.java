@@ -17,6 +17,15 @@ public class StudentManager {
 	}
 	
 	public boolean delete(String sid) {
+		// Loop over the collection/array
+		for (int i = 0; i < student.length; i++) {
+			// if you find what you are looking for
+			if (student[i] != null && student[i].firstname().equals(sid)) {
+				// remove it
+				student[i] = null;
+				return true;
+			}
+		}
 		return false;
 	}
 	
