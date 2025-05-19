@@ -15,7 +15,14 @@ public class Student {
 		super();
 		this.sid = sid;
 	}
-	
-	
+
+	// Use source to generate constructor using fields
+	public Student(String sid, String firstName, String surname, LocalDate dob) {
+		super();
+		this.sid = sid;
+		this.firstName = firstName;
+		this.surname = surname;
+		this.dob = dob;
+	}
 	
 }
