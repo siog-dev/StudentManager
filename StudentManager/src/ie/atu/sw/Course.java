@@ -13,7 +13,8 @@ public enum Course {
 	private final String cfaculty;
 	
 	Course(String name, String faculty) {
-		
+		this.cname = name;
+		this.cfaculty = faculty;
 	}
 	
 }
