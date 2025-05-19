@@ -9,4 +9,13 @@ public class Student {
 	private LocalDate dob;
 	private Address address;
 	private Course course;
+	
+	// Use source to generate constructor using fields
+	public Student(String sid) {
+		super();
+		this.sid = sid;
+	}
+	
+	
+	
 }
