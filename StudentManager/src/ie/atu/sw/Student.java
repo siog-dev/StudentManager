@@ -8,4 +8,5 @@ public class Student {
 	private String surname;
 	private LocalDate dob;
 	private Address address;
+	private Course course;
 }
