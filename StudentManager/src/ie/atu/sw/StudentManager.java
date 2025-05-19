@@ -46,7 +46,21 @@ public class StudentManager {
 	 * Loop over it again, get all of those names and put them into a new array
 	 */
 	public Student[] getStudentsByFirstname(String firstname) {
-		return null;
+		
+		// Count the number of matches and create an array of the right size
+		int matches = 0; // Declare a counter
+		for (int i = 0; i < student.length; i++) { // Loop over the array
+			// Check each index
+			if (student[i] != null && student[i].firstname().equals(firstname)) {
+				// Everytime we get a match - increment the counter
+				matches++;
+			}
+		}
+		
+		// Copy all of the matches into a new array
+		Student[] temp = new Student[0]; // Declare the array
+		
+		return temp;
 	}
 	
 	public int size() {
