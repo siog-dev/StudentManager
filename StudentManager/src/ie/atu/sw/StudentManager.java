@@ -58,7 +58,15 @@ public class StudentManager {
 		}
 		
 		// Copy all of the matches into a new array
-		Student[] temp = new Student[0]; // Declare the array
+		Student[] temp = new Student[matches]; // Declare the array the size of "matches"
+		int index = 0;
+		// Loop over the original array
+		for (int i = 0; i < student.length; i++) {
+			if (student[i] != null && student[i].firstname().equals(firstname)) {
+				temp[index] = student[i];
+				index++;
+			}
+		}
 		
 		return temp;
 	}
