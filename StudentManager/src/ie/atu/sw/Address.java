@@ -7,7 +7,9 @@ public class Address {
 		super();
 		this.address = address;
 	}
-	
-	
+
+	public String getAddress() {
+		return address;
+	}
 	
 }
