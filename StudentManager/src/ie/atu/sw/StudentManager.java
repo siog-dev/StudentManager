@@ -9,12 +9,36 @@ public class StudentManager {
 	}
 
 	public void add(Student s) {
+		// Loop over the Student array
 		for (int i = 0; i < student.length; i++) {
+			// Find the first available slot
 			if (student[i] == null) {
+				// If we find one, put the student into s
 				student[i] = s;
+				// Return
 				return;
 			}
 		}
+		
+		// Increase the array size if the array is full
+		int index = getExpandedIndex();
+		student[index] = s;
+	}
+	
+	// Increase the array size
+	private int getExpandedIndex() {
+		// Create an array twice the size of the original
+		Student[] temp = new Student[student.length * 2];
+		// Copy all the old stuff into the new array
+		for (int i = 0; i < student.length; i++) {
+			temp[i] = student[i];
+		}
+		
+		// Set the next available position to be the original size of the array
+		int index = student.length;
+		// Change my array to the expanded version
+		student = temp;
+		return index;
 	}
 	
 	public boolean delete(String sid) {
