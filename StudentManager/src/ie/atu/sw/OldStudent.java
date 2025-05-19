@@ -2,7 +2,7 @@ package ie.atu.sw;
 
 import java.time.LocalDate;
 
-public class Student {
+public class OldStudent {
 	private String sid;
 	private String firstName;
 	private String surname;
@@ -11,13 +11,13 @@ public class Student {
 	private Course course;
 	
 	// Use source to generate constructor using fields
-	public Student(String sid) {
+	public OldStudent(String sid) {
 		super();
 		this.sid = sid;
 	}
 
 	// Use source to generate constructor using fields
-	public Student(String sid, String firstName, String surname, LocalDate dob) {
+	public OldStudent(String sid, String firstName, String surname, LocalDate dob) {
 		super();
 		this.sid = sid;
 		this.firstName = firstName;

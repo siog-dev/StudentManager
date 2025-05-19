@@ -24,7 +24,4 @@ public enum Course {
 	public String getFaculty() {
 		return cfaculty;
 	}
-	
-	
-	
 }
