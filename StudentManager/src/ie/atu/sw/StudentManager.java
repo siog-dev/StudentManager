@@ -38,6 +38,13 @@ public class StudentManager {
 		return null;
 	}
 	
+	/*
+	 * RETURN AN ARRAY - Two sweeps
+	 * Sweep 1:
+	 * Find all the people with the name, count them, create a correctly sized array
+	 * Sweep 2:
+	 * Loop over it again, get all of those names and put them into a new array
+	 */
 	public Student[] getStudentsByFirstname(String firstname) {
 		return null;
 	}
