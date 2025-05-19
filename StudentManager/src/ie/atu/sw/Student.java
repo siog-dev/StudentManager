@@ -7,4 +7,5 @@ public class Student {
 	private String firstName;
 	private String surname;
 	private LocalDate dob;
+	private Address address;
 }
