@@ -30,6 +30,11 @@ public class StudentManager {
 	}
 	
 	public Student getStudentByID(String sid) {
+		for (int i = 0; i < student.length; i++) {
+			if (student[i] != null && student[i].firstname().equals(sid)) {
+				return student[i];
+			}
+		}
 		return null;
 	}
 	
