@@ -8,13 +8,12 @@ public class StudentManager {
 		student = new Student[INITIAL_CAPACITY];
 	}
 
-	public boolean add(Student s) {
+	public void add(Student s) {
 		for (int i = 0; i < student.length; i++) {
 			if (student[i] == null) {
 				student[i] = s;
 			}
 		}
-		return false;
 	}
 	
 	public boolean delete(String sid) {
