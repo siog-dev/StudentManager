@@ -16,5 +16,15 @@ public enum Course {
 		this.cname = name;
 		this.cfaculty = faculty;
 	}
+
+	public String getCourseName() {
+		return cname;
+	}
+
+	public String getFaculty() {
+		return cfaculty;
+	}
+	
+	
 	
 }
