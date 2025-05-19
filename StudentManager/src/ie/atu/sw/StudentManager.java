@@ -10,7 +10,9 @@ public class StudentManager {
 
 	public boolean add(Student s) {
 		for (int i = 0; i < student.length; i++) {
-			
+			if (student[i] == null) {
+				student[i] = s;
+			}
 		}
 		return false;
 	}
