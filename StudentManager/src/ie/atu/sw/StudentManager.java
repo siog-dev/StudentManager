@@ -5,6 +5,7 @@ public class StudentManager {
 	private Student[] student = null;
 	
 	public StudentManager() {
+		student = new Student[INITIAL_CAPACITY];
 	}
 
 	public boolean add(Student s) {
