@@ -12,6 +12,7 @@ public class StudentManager {
 		for (int i = 0; i < student.length; i++) {
 			if (student[i] == null) {
 				student[i] = s;
+				return;
 			}
 		}
 	}
