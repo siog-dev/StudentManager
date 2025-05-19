@@ -1,5 +1,10 @@
 package ie.atu.sw;
 
-public class Student {
+import java.time.LocalDate;
 
+public class Student {
+	private String sid;
+	private String firstName;
+	private String surname;
+	private LocalDate dob;
 }
