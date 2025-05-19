@@ -4,6 +4,9 @@ public class StudentManager {
 	private static final int INITIAL_CAPACITY = 10;
 	private Student[] student = null;
 	
+	public StudentManager() {
+	}
+
 	public boolean add(Student s) {
 		return false;
 	}
