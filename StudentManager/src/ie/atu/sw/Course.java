@@ -1,6 +1,12 @@
 package ie.atu.sw;
 
 public enum Course {
-	SOFT_DEV, DATA_ANA, WEB_DEV, CHEM, PHYS, MEDI, COMM;
+	SOFT_DEV 	("Software Development", "Computing"),
+	DATA_ANA 	("Data Analytics", "Computing"),
+	WEB_DEV 	("Web Application Development", "Computing"),
+	CHEM 		("Chemistry", "Science"),
+	PHYS 		("Physics", "Science"),
+	MEDI 		("Medicine", "Medicine"),
+	ACC 		("Accounting", "Commerce");
 	
 }
