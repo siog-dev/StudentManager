@@ -50,7 +50,13 @@ public class StudentManager {
 	}
 	
 	public int size() {
-		return 0;
+		int total = 0;
+		// Loop over the array
+		for (int i = 0; i < student.length; i++) {
+			// Check each element
+			if (student[i] != null) total++;
+		}
+		return total;
 	}
 }
 
