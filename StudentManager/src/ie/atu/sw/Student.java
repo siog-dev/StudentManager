@@ -1,5 +1,7 @@
 package ie.atu.sw;
 
-public record Student() {
+import java.time.LocalDate;
 
+public record Student(String sid, String firstName, String surname, 
+		LocalDate dob, Address address, Course course) {
 }
