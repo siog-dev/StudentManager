@@ -37,7 +37,9 @@ public class Menu {
 	private void delete( ) {
 		out.println("[INFO] Delete a Student");
 		out.println("Enter Student ID>");
-		s.next(); // Call the scanner s.next to get user input
+		String sid = s.next();
+		
+		
 	}
 	
 	private void findByID() {
