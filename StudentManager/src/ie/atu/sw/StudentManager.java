@@ -131,6 +131,7 @@ public class StudentManager {
 					new Address("Galway"), 
 					courses[rand.nextInt(0, max)]
 			);
+			add(rs);
 		}
 		
 		System.out.println("Time (ms) "  + (System.currentTimeMillis() - start));
