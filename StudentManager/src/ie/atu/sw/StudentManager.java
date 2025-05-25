@@ -6,6 +6,7 @@ public class StudentManager {
 	
 	public StudentManager() {
 		student = new Student[INITIAL_CAPACITY];
+		init();
 	}
 
 	public void add(Student s) {
@@ -105,5 +106,8 @@ public class StudentManager {
 		}
 		return total;
 	}
+	
+	public void init();
+	
 }
 
