@@ -110,6 +110,9 @@ public class StudentManager {
 	}
 	
 	private void init() {
+		// Use ThreadLocalRandom to get some random values
+		ThreadLocalRandom rand = ThreadLocalRandom.current();
+		
 		
 	}
 		
