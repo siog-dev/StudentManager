@@ -1,5 +1,14 @@
 package ie.atu.sw;
 
-public class Menu {
+/*
+ * This class will do nothing more than display the menu
+ * and get input from the user
+ */
 
+public class Menu {
+	
+	private void showOptions() {
+		
+	}
+	
 }
