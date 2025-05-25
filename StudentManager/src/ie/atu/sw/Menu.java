@@ -70,6 +70,9 @@ public class Menu {
 		String fname = s.next();
 		
 		Student[] results = sm.getStudentsByFirstname(fname);
+		for (Student student : results) {
+			out.println(student);
+		}
 	}
 	
 	private void getTotal() {
