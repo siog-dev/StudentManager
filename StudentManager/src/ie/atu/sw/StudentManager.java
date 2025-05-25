@@ -120,7 +120,7 @@ public class StudentManager {
 		// Course is an enum - use .values to return an array of it's values
 		Course [] courses = Course.values();
 		
-		int max = 1000;
+		int max = 100_000;
 		long start = System.currentTimeMillis();
 		
 		for (int i = 0; i < max; i++) {
