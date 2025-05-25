@@ -32,6 +32,16 @@ public class Menu {
 	
 	private void add() {
 		out.println("[INFO] Add a Student");
+		
+		out.println("Enter Student ID>");
+		String sid = s.next();
+		
+		out.println("Enter Student Firstname>");
+		String fname = s.next();
+		
+		out.println("Enter Student Surname>");
+		String surname = s.next();
+		
 	}
 	
 	private void delete( ) {
@@ -44,7 +54,6 @@ public class Menu {
 		}else {
 			out.println("[INFO] Cannot find Student" + sid);
 		}
-		
 	}
 	
 	private void findByID() {
