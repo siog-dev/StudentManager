@@ -42,6 +42,9 @@ public class Menu {
 		out.println("Enter Student Surname>");
 		String surname = s.next();
 		
+		// Create an instance of our Student record(class)
+		Student tmp = new Student(sid, fname, surname, null, null, null);
+		
 	}
 	
 	private void delete( ) {
