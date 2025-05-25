@@ -113,8 +113,12 @@ public class StudentManager {
 		// Use ThreadLocalRandom to get some random values
 		ThreadLocalRandom rand = ThreadLocalRandom.current();
 		
+		
+		String[] fnames = {"Joe", "Jane", "Anne", "Pat"};
+		String[] surnames = {"Smith", "Murphy", "Burke", "O'Brien"};
 		// Course is an enum - use .values to return an array of it's values
 		Course [] courses = Course.values();
+		
 		int max = 1000;
 		long start = System.currentTimeMillis();
 		
