@@ -114,7 +114,7 @@ public class StudentManager {
 		ThreadLocalRandom rand = ThreadLocalRandom.current();
 		
 		// Course is an enum - use .values to return an array of it's values
-		Course.values();
+		Course [] courses = Course.values();
 		
 		
 	}
