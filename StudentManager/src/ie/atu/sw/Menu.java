@@ -49,6 +49,8 @@ public class Menu {
 	
 	private void findByID() {
 		out.println("[INFO] Find Student by ID");
+		out.println("Enter Student ID>");
+		String sid = s.next();
 	}
 	
 	private void findStudentsByFirstname() {
