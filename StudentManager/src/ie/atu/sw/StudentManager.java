@@ -123,7 +123,10 @@ public class StudentManager {
 		long start = System.currentTimeMillis();
 		
 		for (int i = 0; i < max; i++) {
-			Student rs = new Student("G00" +i, null, null, null, null, null);
+			Student rs = new Student("G00" +i, 
+					fnames[rand.nextInt(0, max)], 
+					surnames[rand.nextInt(0, max)], 
+					null, null, null);
 		}
 		
 		System.out.println("Time (ms) "  + (System.currentTimeMillis() - start));
