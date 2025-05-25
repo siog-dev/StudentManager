@@ -116,6 +116,9 @@ public class StudentManager {
 		// Course is an enum - use .values to return an array of it's values
 		Course [] courses = Course.values();
 		
+		for (int i = 0; i < max; i++) {
+			
+		}
 		
 	}
 		
