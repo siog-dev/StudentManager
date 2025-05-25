@@ -115,11 +115,11 @@ public class StudentManager {
 		
 		// Course is an enum - use .values to return an array of it's values
 		Course [] courses = Course.values();
-		
 		int max = 1000;
 		long start = System.currentTimeMillis();
+		
 		for (int i = 0; i < max; i++) {
-			
+			Student rs = new Student(null, null, null, null, null, null)
 		}
 		
 		System.out.println("Time (ms) "  + (System.currentTimeMillis() - start));
