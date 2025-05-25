@@ -10,6 +10,26 @@ public class Menu {
 		s = new Scanner(System.in);
 	}
 	
+	private void add() {
+		
+	}
+	
+	private void delete( ) {
+		
+	}
+	
+	private void findByID() {
+		
+	}
+	
+	private void findStudentsByFirstname() {
+		
+	}
+	
+	private void getTotal() {
+		
+	}
+	
 	private void showOptions() {
 		out.print("******************************");
 		out.print("**    Student Manager 1.0   **");
