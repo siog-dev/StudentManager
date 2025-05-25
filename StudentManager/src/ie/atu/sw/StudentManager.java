@@ -45,7 +45,7 @@ public class StudentManager {
 		// Loop over the collection/array
 		for (int i = 0; i < student.length; i++) {
 			// if you find what you are looking for
-			if (student[i] != null && student[i].firstname().equals(sid)) {
+			if (student[i] != null && student[i].sid().equals(sid)) {
 				// remove it
 				student[i] = null;
 				return true;
@@ -56,7 +56,7 @@ public class StudentManager {
 	
 	public Student getStudentByID(String sid) {
 		for (int i = 0; i < student.length; i++) {
-			if (student[i] != null && student[i].firstname().equals(sid)) {
+			if (student[i] != null && student[i].sid().equals(sid)) {
 				return student[i];
 			}
 		}
