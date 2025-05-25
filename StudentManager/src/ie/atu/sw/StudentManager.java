@@ -1,5 +1,7 @@
 package ie.atu.sw;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class StudentManager {
 	private static final int INITIAL_CAPACITY = 10;
 	private Student[] student = null;
@@ -107,7 +109,9 @@ public class StudentManager {
 		return total;
 	}
 	
-	public void init();
-	
+	private void init(); {
+		
+	}
+		
 }
 
