@@ -1,7 +1,10 @@
 package ie.atu.sw;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
+import java.util.Scanner;
+
 public class Menu {
+	private Scanner s;
 	
 	private void showOptions() {
 		out.print("******************************");
