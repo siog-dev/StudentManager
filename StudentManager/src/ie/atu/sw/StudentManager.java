@@ -117,6 +117,7 @@ public class StudentManager {
 		Course [] courses = Course.values();
 		
 		int max = 1000;
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < max; i++) {
 			
 		}
