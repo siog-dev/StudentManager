@@ -51,6 +51,17 @@ public class Menu {
 		out.println("[INFO] Find Student by ID");
 		out.println("Enter Student ID>");
 		String sid = s.next();
+		/*
+		 * get Student called student and assign it the value
+		 * of sm(student manager) .getStudentByID() <-- pass in sid
+		 */
+		Student student = sm.getStudentByID(sid);
+		
+		if (student != null) {
+			out.println(student);
+		}else {
+			out.println("[INFO] Cannot find Student" + sid);
+		}
 	}
 	
 	private void findStudentsByFirstname() {
