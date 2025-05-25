@@ -125,11 +125,11 @@ public class StudentManager {
 		
 		for (int i = 0; i < max; i++) {
 			Student rs = new Student("G00" +i, 
-					fnames[rand.nextInt(0, max)], 
-					surnames[rand.nextInt(0, max)], 
+					fnames[rand.nextInt(0, fnames.length)], 
+					surnames[rand.nextInt(0, surnames.length)], 
 					LocalDate.now(),
 					new Address("Galway"), 
-					courses[rand.nextInt(0, max)]
+					courses[rand.nextInt(0, courses.length)]
 			);
 			add(rs);
 		}
