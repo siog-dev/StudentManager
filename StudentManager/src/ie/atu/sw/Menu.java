@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Menu {
 	private Scanner s;
+	// Exit gracefully, set keepRunning to true
+	private boolean keepRunning = true;
 	
 	public Menu() {
 		s = new Scanner(System.in);
@@ -12,9 +14,10 @@ public class Menu {
 	
 	public void start() {
 		// Display the menu
-		while (true) {
+		while (keepRunning) {
 			// Get options from the user
 			showOptions();
+			
 			
 		}
 	}
