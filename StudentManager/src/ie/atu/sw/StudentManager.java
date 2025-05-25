@@ -1,5 +1,6 @@
 package ie.atu.sw;
 
+import java.time.LocalDate;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class StudentManager {
@@ -126,7 +127,8 @@ public class StudentManager {
 			Student rs = new Student("G00" +i, 
 					fnames[rand.nextInt(0, max)], 
 					surnames[rand.nextInt(0, max)], 
-					null, null, null);
+					LocalDate.now(),
+					null, null);
 		}
 		
 		System.out.println("Time (ms) "  + (System.currentTimeMillis() - start));
