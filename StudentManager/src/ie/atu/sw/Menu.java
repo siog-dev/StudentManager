@@ -32,6 +32,15 @@ public class Menu {
 			 * When we get to next the program will wait for user input
 			 */
 			int choice = Integer.parseInt(s.next());
+			switch (choice) {
+				case 1  -> add();
+				case 2  -> delete();
+				case 3  -> findByID();
+				case 4  -> findStudentsByFirstname();
+				case 5  -> getTotal();
+				case 6  -> keepRunning = false;
+				default -> out.println("[Error] Invalid Selection")
+			}
 			
 			
 		}
