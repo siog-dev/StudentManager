@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Menu {
 	private Scanner s;
-	// Exit gracefully, set keepRunning to true
 	private boolean keepRunning = true;
 	
 	public Menu() {
@@ -13,24 +12,9 @@ public class Menu {
 	}
 	
 	public void start() {
-		// Display the menu
 		while (keepRunning) {
-			// Get options from the user
 			showOptions();
 			
-			/*
-			 * Get users option choice, a number between 1 and 6
-			 * Read in the users option choice (num 1 -6)
-			 * Scanner reads it as a string
-			 * Convert to int
-			 */
-			
-			/*
-			 * int called choice is assigned the value of
-			 * the integer, parse out the integer value from the next string
-			 * 
-			 * When we get to next the program will wait for user input
-			 */
 			int choice = Integer.parseInt(s.next());
 			switch (choice) {
 				case 1  -> add();
