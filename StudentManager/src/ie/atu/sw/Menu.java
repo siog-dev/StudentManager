@@ -43,8 +43,9 @@ public class Menu {
 		String surname = s.next();
 		
 		// Create an instance of our Student record(class)
-		Student tmp = new Student(sid, fname, surname, null, null, null);
-		
+		Student tmp = new Student(sid, fname, surname,
+				LocalDate.now(), new Address("Galway"), Course.SOFT_DEV);
+		sm.add(tmp);
 	}
 	
 	private void delete( ) {
