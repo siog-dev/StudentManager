@@ -47,7 +47,8 @@ public class Menu {
 	}
 	
 	private void getTotal() {
-		out.println("[INFO] Total Number of Students");
+		// Append sm(StudentManager identifier) and call size() using dot notation
+		out.println("Total Number of Students: " + sm.size());
 	}
 	
 	private void showOptions() {
