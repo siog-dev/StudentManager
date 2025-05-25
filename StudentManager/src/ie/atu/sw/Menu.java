@@ -10,6 +10,10 @@ public class Menu {
 		s = new Scanner(System.in);
 	}
 	
+	public void start() {
+		
+	}
+	
 	private void add() {
 		
 	}
