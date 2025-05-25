@@ -4,6 +4,7 @@ package ie.atu.sw;
  * This class will do nothing more than display the menu
  * and get input from the user
  */
+
 import static java.lang.System.*;
 public class Menu {
 	
@@ -18,6 +19,11 @@ public class Menu {
 		out.print("(5) Get Total Student Number");
 		out.print("(6) Quit");
 		out.print("Select an Option [1 - 6]>");
+		
+		/*
+		 * Next step is to write code that will read all of this stuff in
+		 * and keep the menu alive using some class of a loop
+		 */
+		
 	}
-	
 }
