@@ -11,7 +11,12 @@ public class Menu {
 	}
 	
 	public void start() {
-		
+		// Display the menu
+		while (true) {
+			// Get options from the user
+			showOptions();
+			
+		}
 	}
 	
 	private void add() {
