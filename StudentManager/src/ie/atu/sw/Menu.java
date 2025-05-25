@@ -68,6 +68,8 @@ public class Menu {
 		out.println("[INFO] Find Student by Firstname");
 		out.println("Enter Student Firstname>");
 		String fname = s.next();
+		
+		Student[] results = sm.getStudentsByFirstname(fname);
 	}
 	
 	private void getTotal() {
