@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Menu {
 	private Scanner s;
 	
+	public Menu() {
+		s = new Scanner(System.in);
+	}
+	
 	private void showOptions() {
 		out.print("******************************");
 		out.print("**    Student Manager 1.0   **");
