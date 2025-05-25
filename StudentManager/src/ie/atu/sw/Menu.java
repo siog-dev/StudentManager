@@ -4,6 +4,7 @@ import static java.lang.System.out;
 import java.util.Scanner;
 
 public class Menu {
+	private StudentManager sm = new StudentManager();
 	private Scanner s;
 	private boolean keepRunning = true;
 	
