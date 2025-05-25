@@ -122,6 +122,7 @@ public class StudentManager {
 			
 		}
 		
+		System.out.println("Time (ms) "  + (System.currentTimeMillis() - start));
 	}
 		
 }
