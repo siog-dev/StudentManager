@@ -32,7 +32,7 @@ public class StudentManager {
 	// Increase the array size
 	private int getExpandedIndex() {
 		// Create an array twice the size of the original
-		Student[] temp = new Student[student.length + 1];
+		Student[] temp = new Student[student.length * 2];
 		// Copy all the old stuff into the new array
 		for (int i = 0; i < student.length; i++) {
 			temp[i] = student[i];
