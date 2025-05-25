@@ -39,10 +39,10 @@ public class Menu {
 				case 4  -> findStudentsByFirstname();
 				case 5  -> getTotal();
 				case 6  -> keepRunning = false;
-				default -> out.println("[Error] Invalid Selection")
+				default -> out.println("[Error] Invalid Selection");
 			}
 		}
-		out.println("[INFO] Exiting...Bye!")
+		out.println("[INFO] Exiting...Bye!");
 	}
 	
 	private void add() {
