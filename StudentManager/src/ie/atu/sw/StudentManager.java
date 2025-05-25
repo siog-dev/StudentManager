@@ -109,7 +109,7 @@ public class StudentManager {
 		return total;
 	}
 	
-	private void init(); {
+	private void init() {
 		
 	}
 		
