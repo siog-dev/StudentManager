@@ -39,6 +39,11 @@ public class Menu {
 		out.println("Enter Student ID>");
 		String sid = s.next();
 		
+		if (sm.delete(sid)) {
+			out.println("[INFO] Student " + sid + " deleted.");
+		}else {
+			out.println("[INFO] Cannot find Student" + sid);
+		}
 		
 	}
 	
