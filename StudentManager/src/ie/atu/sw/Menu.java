@@ -66,16 +66,16 @@ public class Menu {
 	}
 	
 	private void showOptions() {
-		out.print("******************************");
-		out.print("**    Student Manager 1.0   **");
-		out.print("******************************");
-		out.print("(1) Add a Student");
-		out.print("(2) Delete a Student");
-		out.print("(3) Find Student by ID");
-		out.print("(4) Find Students by Firstname");
-		out.print("(5) Get Total Student Number");
-		out.print("(6) Quit");
-		out.print("Select an Option [1 - 6]>");
+		out.println("******************************");
+		out.println("**    Student Manager 1.0   **");
+		out.println("******************************");
+		out.println("(1) Add a Student");
+		out.println("(2) Delete a Student");
+		out.println("(3) Find Student by ID");
+		out.println("(4) Find Students by Firstname");
+		out.println("(5) Get Total Student Number");
+		out.println("(6) Quit");
+		out.println("Select an Option [1 - 6]>");
 		
 	}
 }
