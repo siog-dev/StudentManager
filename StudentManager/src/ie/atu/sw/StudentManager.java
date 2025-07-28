@@ -1,9 +1,12 @@
 package ie.atu.sw;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class StudentManager {
+public class StudentManager implements Serializable{
+	private static final long serialVersionUID = 777L;
+	
 	private static final int INITIAL_CAPACITY = 10;
 	private Student[] student = null;
 	

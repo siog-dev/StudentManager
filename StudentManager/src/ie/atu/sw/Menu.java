@@ -17,19 +17,45 @@ public class Menu {
 	public void start() {
 		while (keepRunning) {
 			showOptions();
-			
 			int choice = Integer.parseInt(s.next());
+			
 			switch (choice) {
 				case 1  -> add();
 				case 2  -> delete();
 				case 3  -> findByID();
 				case 4  -> findStudentsByFirstname();
 				case 5  -> getTotal();
-				case 6  -> keepRunning = false;
+				case 6  -> save();
+				case 7  -> load();
+				case 8  -> keepRunning = false;
 				default -> out.println("[Error] Invalid Selection");
 			}
 		}
 		out.println("[INFO] Exiting...Bye!");
+	}
+	
+	private void save() {
+		System.out.println("[INFO] Save Student Manager Database.");
+		System.out.println("Enter File Name>");
+		String file = s.next(); // Student ID. Block and wait
+		try {
+			DatabaseUtils.save(sm, file);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
+	private void load() {
+		System.out.println("[INFO] Load Student Manager Database.");
+		System.out.println("Enter File Name>");
+		String file = s.next(); // Student ID. Block and wait
+		try {
+			sm = DatabaseUtils.load(file);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
 	}
 	
 	private void add() {
@@ -104,7 +130,9 @@ public class Menu {
 		out.println("(3) Find Student by ID");
 		out.println("(4) Find Students by Firstname");
 		out.println("(5) Get Total Student Number");
-		out.println("(6) Quit");
+		out.println("(6) Save Database");
+		out.println("(7) Load Database");
+		out.println("(8) Quit");
 		out.println("Select an Option [1 - 6]>");
 		
 	}
